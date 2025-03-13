@@ -7,8 +7,8 @@
     <title>Greenden</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 " rel="stylesheet">
-<link rel="stylesheet" href="contact.html">
-<link rel="stylesheet" href="product.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="product.html">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
         <h1 class="text-2xl cursor-pointer ">Greenden</h1>
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -36,6 +36,28 @@
         </ul>
 
     </nav>
+
+
+    <!----------------------------------- side navbar  --------------------------------------->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-6">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+
+    </section>
 
     <!---------------------------------- header section --------------------------------------->
 
@@ -72,8 +94,11 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Large Assortment</h2>
-                <p class="text-justify">The Greenden Project offers a wide variety of plants to suit every need—whether you're a beginner or a seasoned plant lover. Our Large Assortment feature ensures users can easily explore and choose from a diverse selection of plants.
-                    With a thoughtfully curated Large Assortment feature, users can effortlessly browse and select plants based on their needs. 
+                <p class="text-justify">The Greenden Project offers a wide variety of plants to suit every need—whether
+                    you're a beginner or a seasoned plant lover. Our Large Assortment feature ensures users can easily
+                    explore and choose from a diverse selection of plants.
+                    With a thoughtfully curated Large Assortment feature, users can effortlessly browse and select
+                    plants based on their needs.
                 </p>
             </div>
             <div class="border border-black p-2 m-6">
@@ -84,8 +109,11 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Free and fast Shipping</h2>
-                <p class="text-justify">At Greenden, we believe that bringing nature into your home should be effortless. That's why we offer Free and Fast Shipping, ensuring that your favorite plants arrive at your doorstep in perfect condition—quickly and without extra cost!
-                    Enjoy completely free delivery on all plant orders, making greenery more accessible and affordable!  Need plants urgently? Choose our same-day or next-day delivery service for select locations 
+                <p class="text-justify">At Greenden, we believe that bringing nature into your home should be
+                    effortless. That's why we offer Free and Fast Shipping, ensuring that your favorite plants arrive at
+                    your doorstep in perfect condition—quickly and without extra cost!
+                    Enjoy completely free delivery on all plant orders, making greenery more accessible and affordable!
+                    Need plants urgently? Choose our same-day or next-day delivery service for select locations
                 </p>
             </div>
             <div class="border border-black p-2 m-6">
@@ -97,8 +125,12 @@
 
 
                 <h2 class="text-xl font-medium">24/7 Support</h2>
-                <p class="text-justify">At Greenden, we prioritize customer satisfaction, ensuring that every plant lover gets the support they need, anytime, anywhere. Our 24/7 Customer Support is designed to provide instant assistance, expert advice, and seamless issue resolution—whenever you need it!
-                    Get assistance 24/7, no matter the time zone or location, Reach out via live chat, email, phone, or social media for quick responses,  Need advice on watering, sunlight, or plant health? Our horticulture experts are ready to help!
+                <p class="text-justify">At Greenden, we prioritize customer satisfaction, ensuring that every plant
+                    lover gets the support they need, anytime, anywhere. Our 24/7 Customer Support is designed to
+                    provide instant assistance, expert advice, and seamless issue resolution—whenever you need it!
+                    Get assistance 24/7, no matter the time zone or location, Reach out via live chat, email, phone, or
+                    social media for quick responses, Need advice on watering, sunlight, or plant health? Our
+                    horticulture experts are ready to help!
                 </p>
             </div>
         </div>
@@ -146,20 +178,31 @@
         <h1 class="text-3xl font-bold mt-5 text-center">Customers Reviews</h1>
         <div class="flex flex-col gap-5 justify-center text-white m-5">
             <div class="bg-green-900 p-5 container rounded-md">
-                <p class="text-justify"> "Absolutely love Greenden! The website is super easy to navigate, and the variety of plants is amazing. I ordered a few indoor plants, and they arrived in perfect condition, thanks to the secure packaging. Plus, the free and fast shipping was a huge bonus! The 24/7 support team was incredibly helpful in guiding me on plant care. Highly recommend for all plant lovers!"
+                <p class="text-justify"> "Absolutely love Greenden! The website is super easy to navigate, and the
+                    variety of plants is amazing. I ordered a few indoor plants, and they arrived in perfect condition,
+                    thanks to the secure packaging. Plus, the free and fast shipping was a huge bonus! The 24/7 support
+                    team was incredibly helpful in guiding me on plant care. Highly recommend for all plant lovers!"
 
                 </p>
                 <p class="font-bold text-yellow-500">Genny Mthew ⭐⭐⭐⭐</p>
             </div>
             <div class="bg-green-900 p-5 container rounded-md">
-                <p class="text-justify">"Greenden exceeded my expectations! The plants were fresh, vibrant, and exactly as shown on the website. I loved the easy filtering options, which helped me find the perfect low-maintenance plants for my home. The real-time order tracking was a great feature, and my order arrived earlier than expected! Plus, the customer support team was friendly and quick to respond. Definitely my go-to plant store!
+                <p class="text-justify">"Greenden exceeded my expectations! The plants were fresh, vibrant, and exactly
+                    as shown on the website. I loved the easy filtering options, which helped me find the perfect
+                    low-maintenance plants for my home. The real-time order tracking was a great feature, and my order
+                    arrived earlier than expected! Plus, the customer support team was friendly and quick to respond.
+                    Definitely my go-to plant store!
 
                 </p>
                 <p class="font-bold text-yellow-500">Tom ⭐⭐⭐</p>
             </div>
             <div class="bg-green-900 p-5 container rounded-md">
-                <p class="text-justify"> "Greeden is a fantastic platform for plant lovers! I was impressed by the large assortment of plants, and the detailed descriptions made it easy to choose the right ones for my space. The free and fast shipping was a huge plus, and my plants arrived fresh and well-packaged. I also reached out to the 24/7 support team for care tips, and they were super helpful. Highly recommend for anyone looking to add more greenery to their home!"
-                    
+                <p class="text-justify"> "Greeden is a fantastic platform for plant lovers! I was impressed by the large
+                    assortment of plants, and the detailed descriptions made it easy to choose the right ones for my
+                    space. The free and fast shipping was a huge plus, and my plants arrived fresh and well-packaged. I
+                    also reached out to the 24/7 support team for care tips, and they were super helpful. Highly
+                    recommend for anyone looking to add more greenery to their home!"
+
                 </p>
                 <p class="font-bold text-yellow-500">Peter Parker ⭐⭐⭐⭐⭐</p>
             </div>
@@ -187,6 +230,8 @@
         <p>The Standard chunk of lorem ipsum used since the 1500s is reprodused below those interest</p>
         <p>&COPY; 2025 Greenden.com </p>
     </section>
+
+    <script src="index.js"></script>
 
 </body>
 

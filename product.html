@@ -15,8 +15,28 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl cursor-pointer ">Greenden</h1>
 
+        <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh; right: -50%;">
+            <div class="text-right p-6">
+                <p id="closenav" class="inline cursor-pointer">X</p>
+    
+            </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <li>
+                    <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="product.html">Products</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+                </li>
+            </ul>
+    
+    
+        </section>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -35,65 +55,66 @@
         </ul>
 
     </nav>
+
     <!--------------------------------------------- product section ------------------------------------->
     <div class=" text-center p-4">
         <h2 class="font-bold text-3xl md:text-5xl mt-5 mb-4">Our Products</h2>
-        <input type="email" placeholder="search for Products" class="border border-black p-2 m-3 rounded-md"
+        <input id="search" type="email" placeholder="search for Products" class="border border-black p-2 m-3 rounded-md"
             style="width: 80%;">
 
 
-        <div class="grid grid-cols-2  gap-4 md:grid-cols-4 gap-5 m-10 mt-6">
+        <div id="product-container" class="grid grid-cols-2  gap-4 md:grid-cols-4 gap-5 m-10 mt-6">
 
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-1.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Peony plant</h1>
                 <p>$20</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-2.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Daisy plant</h1>
                 <p>$15</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-3.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>rose plant</h1>
                 <p>$25</p>
             </div>
-            <div>
+            <div class="text-center"> 
                 <img src="./image/sale-4.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Tulip plant</h1>
                 <p>$20</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-5.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Sunflower plant</h1>
                 <p>$10</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-6.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Hydrangea plant</h1>
                 <p>$24</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-7.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
                 <h1>Azalea plant</h1>
                 <p>$25</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./image/sale-8.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer rounded-md"
                     alt="seller-1">
@@ -104,38 +125,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!------------------------------------------ footer ------------------------------------------------------->
     <section class="bg-green-100 p-10 flex flex-col gap-5 ">
         <h1 class="text-4xl font-bold">Greenden</h1>
@@ -143,6 +132,7 @@
         <p>&COPY; 2025 Greenden.com </p>
     </section>
 
+    <script src="product.js"></script>
 </body>
 
 </html>
